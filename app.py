@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 from geolocation import get_ip_based_location
-from streamlit_javascript import st_javascript
-client_ip = st_javascript("await fetch('https://api.ipify.org').then(r=>r.text())")
+# from streamlit_javascript import st_javascript
+# client_ip = st_javascript("await fetch('https://api.ipify.org').then(r=>r.text())")
 
 st.write("Client IP address:")
-st.write(client_ip)
+# st.write(client_ip)
 
 st.write("Hello world")
 
