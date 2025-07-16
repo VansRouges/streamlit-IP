@@ -13,7 +13,7 @@ ip = st.context.ip_address
 st.write(ip)
 
 # Fetch location based on IP address
-location = get_ip_based_location(ip)
+location = get_ip_based_location(client_ip)
 if "error" in location:
     st.error(f"Error fetching location: {location['error']}")
 
@@ -62,7 +62,7 @@ st.html(
         <h2 class="custom-title">Welcome!</h2>
         <p class="custom-paragraph">
             <span class="custom-strike">Oops</span>! 
-            This is a <b>custom HTML card</b> with <span style='color: #3498db;'>CSS styling</span>.
+            This is a <b>custom HTML card</b> with <span style='color: #3498db;'>CSS styling, bruh</span>.
         </p>
         <button class="custom-button">Click Me</button>
         <span id="ip" class="ip-address"></span>
