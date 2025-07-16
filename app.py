@@ -9,7 +9,7 @@ st.write("Client IP address:")
 
 st.write("Hello world")
 
-ip = st.context.headers.get("x-forwarded-for")
+ip = st.context.ip_address
 
 # Fetch location based on IP address
 location = get_ip_based_location(ip)
